@@ -1,0 +1,202 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.datatable {
+    width: 100% !important;
+}
+
+table.dataTable thead {
+    border-bottom: 2px solid #c8ced3;
+    background-color: white;
+}
+
+.dataTables_length,
+.dataTables_filter {
+    margin-bottom: 0.333em;
+    margin-top: .2rem;
+}
+
+.dt-buttons {
+    margin-bottom: 2rem;
+    padding-top: 0.25rem;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons button .dt-down-arrow {
+    padding-left: 0.5rem;
+}
+
+.dataTables_filter {
+    margin-right: .2rem;
+}
+
+.dataTables_scroll {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-width: 0.2rem;
+}
+
+.dataTables_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: -2.5rem;
+    margin-left: -1rem;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+    border-radius: 0;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    border-bottom: 2px solid #c8ced3;
+}
+
+table.dataTable thead {
+    border-bottom: 2px solid #c8ced3;
+    background-color: white;
+}
+table.dataTable tbody td.select-checkbox:before {
+    top: auto !important;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #c8ced3;
+}
+
+div.dt-button-collection div button:first-child {
+    display: none;
+}
+
+div.dt-button-collection :not(:first-child) {
+    width: 100%;
+}
+
+.select2 .select2-selection--single {
+    height: 2.25rem;
+}
+
+.select2-selection__rendered {
+    padding-top: 0.25rem;
+    padding-bottom: 0.2rem;
+}
+.select2-selection .select2-selection__arrow {
+    height: 2.25rem!important;
+}
+
+.select2-results__option {
+    padding-left: 0.5rem !important;
+}
+
+.has-error .invalid-feedback {
+    display: block !important;
+}
+
+.btn-info,
+.badge-info {
+    color: white;
+}
+
+.sidebar .nav-item {
+    cursor: pointer;
+}
+
+.btn-default {
+    color: #23282c;
+    background-color: #f0f3f5;
+    border-color: #f0f3f5;
+}
+
+.btn-default.focus,
+.btn-default:focus {
+    box-shadow: 0 0 0 .2rem rgba(209, 213, 215, .5);
+}
+
+.btn-default:hover {
+    color: #23282c;
+    background-color: #d9e1e6;
+    border-color: #d1dbe1;
+}
+
+.searchable-title {
+    font-weight: bold;
+}
+.searchable-fields {
+    padding-left:5px;
+}
+.searchable-link {
+    padding:0 5px 0 5px;
+}
+.searchable-link:hover   {
+    cursor: pointer;
+    background: #eaeaea;
+}
+.select2-results__option {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+}
+
+/*Form fields*/
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+    padding-right: 2rem !important;
+    padding-top: 0.5rem !important;
+    background-color: white !important;
+    text-align: center;
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: rgba(191, 219, 254, 1);	/*bg-indigo-200*/
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button		{
+    font-weight: 700;				/*font-bold*/
+    border-radius: .25rem;			/*rounded*/
+    border: 1px solid transparent;	/*border border-transparent*/
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current	{
+    color: #fff !important;				/*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); 	/*shadow*/
+    font-weight: 700;					/*font-bold*/
+    border-radius: .25rem;				/*rounded*/
+    background: #667eea !important;		/*bg-indigo-500*/
+    border: 1px solid transparent;		/*border border-transparent*/
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover		{
+    color: #fff !important;				/*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);	 /*shadow*/
+    font-weight: 700;					/*font-bold*/
+    border-radius: .25rem;				/*rounded*/
+    background: #667eea !important;		/*bg-indigo-500*/
+    border: 1px solid transparent;		/*border border-transparent*/
+}
+
+/*Add padding to bottom border */
+table.dataTable.no-footer {
+    border-bottom: 1px solid #e2e8f0;	/*border-b-1 border-gray-300*/
+}
+
+/*Change colour of responsive icon*/
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    background-color: #667eea !important; /*bg-indigo-500*/
+}
